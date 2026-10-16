@@ -1,0 +1,1537 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Undangan Wisuda - Nurul Hikmah</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: #fff8f4;
+      color: #60483f;
+      line-height: 1.7;
+    }
+
+    nav {
+      padding: 16px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #fffdfb;
+      border-bottom: 1px solid #f2dfd7;
+    }
+
+    nav .brand {
+      font-weight: 700;
+      font-size: 18px;
+    }
+
+    nav a {
+      color: #79594e;
+      text-decoration: none;
+      font-size: 13px;
+    }
+
+    .hero {
+      min-height: 570px;
+      padding: 80px 8%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background:
+        radial-gradient(ellipse at top, #fffdfb, transparent 65%),
+        linear-gradient(140deg, #fff5ee, #f8e1dc, #fff8f1);
+    }
+
+    .hero-content {
+      max-width: 650px;
+    }
+
+    .eyebrow {
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-size: 12px;
+      color: #b27679;
+      font-weight: 700;
+    }
+
+    h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: clamp(42px, 8vw, 70px);
+      color: #76574b;
+      font-weight: 400;
+      margin: 18px 0 8px;
+    }
+
+    .name {
+      font-size: clamp(24px, 5vw, 36px);
+      color: #b8757b;
+      font-weight: 700;
+    }
+
+    .date {
+      margin: 22px 0;
+      font-size: 19px;
+      font-weight: 700;
+    }
+
+    .intro {
+      max-width: 480px;
+      margin: 0 auto 26px;
+    }
+
+  .button {
+  display: inline-block;
+  padding: 13px 28px;
+  background: linear-gradient(135deg, #C98D96, #B8757B);
+  color: #FFFFFF;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 30px;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(184, 117, 123, 0.22);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(184, 117, 123, 0.3);
+}
+
+    section {
+      padding: 65px 8%;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+
+    .subtitle {
+      max-width: 540px;
+      margin: 0 auto 28px;
+    }
+
+    .details {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      max-width: 900px;
+      margin: 30px auto 0;
+    }
+
+    .card {
+  position: relative;
+  background: linear-gradient(145deg, #FFFFFF, #FFF8F4);
+  border: 1px solid #E8D5B6;
+  padding: 28px 18px;
+  border-radius: 22px;
+  box-shadow: 0 8px 24px rgba(114, 47, 55, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(114, 47, 55, 0.13);
+}
+
+.card .emoji {
+  font-size: 30px;
+  margin-bottom: 6px;
+}
+
+.card h3 {
+  margin: 10px 0;
+  color: #A66A72;
+}
+    .location {
+      background: #f9e9e5;
+    }
+
+    .rsvp-form {
+      max-width: 420px;
+      margin: 25px auto 0;
+      text-align: left;
+    }
+
+    .rsvp-form label {
+      display: block;
+      margin: 14px 0 6px;
+      font-weight: 600;
+    }
+
+    .rsvp-form input,
+    .rsvp-form select,
+    .rsvp-form textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #e5c9c0;
+      border-radius: 10px;
+      background: #fffdfb;
+      color: #60483f;
+      font: inherit;
+    }
+
+    .rsvp-form .button {
+      width: 100%;
+      margin-top: 18px;
+    }
+
+    footer {
+      padding: 25px;
+      text-align: center;
+      background: #fffdfb;
+      font-size: 13px;
+    }
+
+    @media (max-width: 650px) {
+      nav {
+        padding: 14px 5%;
+      }
+
+      nav .brand {
+        font-size: 15px;
+      }
+
+      .hero {
+        min-height: 500px;
+        padding: 55px 7%;
+      }
+
+      section {
+        padding: 48px 6%;
+      }
+
+      .details {
+        grid-template-columns: 1fr;
+      }
+    }
+    /* Posisi tulisan dan ilustrasi wisuda */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.hero-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  display: block;
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 700px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image img {
+    max-width: 260px;
+  }
+}
+/* Hiasan lembut untuk halaman pembuka */
+.hero {
+  position: relative;
+  overflow: hidden;
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at 10% 15%, #f9dce5 0, transparent 25%),
+    radial-gradient(circle at 90% 85%, #fce9d9 0, transparent 28%),
+    #fff9f4;
+  padding: 35px;
+  box-shadow: 0 12px 35px rgba(190, 130, 140, 0.12);
+}
+
+/* Ornamen bunga di sudut */
+.hero::before {
+  content: "🌸";
+  position: absolute;
+  top: 12px;
+  left: 15px;
+  font-size: 30px;
+  opacity: 0.65;
+  pointer-events: none;
+}
+
+.hero::after {
+  content: "🌷";
+  position: absolute;
+  right: 15px;
+  bottom: 10px;
+  font-size: 32px;
+  opacity: 0.65;
+  pointer-events: none;
+}
+
+/* Bingkai lembut untuk ilustrasi */
+.hero-image img {
+  filter: drop-shadow(0 10px 12px rgba(190, 130, 140, 0.15));
+  transition: transform 0.3s ease;
+}
+
+.hero-image img:hover {
+  transform: translateY(-5px);
+}
+
+/* Tampilan tetap nyaman di layar HP */
+@media (max-width: 700px) {
+  .hero {
+    padding: 25px 18px;
+    border-radius: 22px;
+  }
+}
+/* Animasi lembut saat halaman dibuka */
+@keyframes munculLembut {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero {
+  animation: munculLembut 1s ease-out both;
+}
+
+.hero-image img {
+  animation: munculLembut 1.2s ease-out both;
+  animation-delay: 0.2s;
+}
+
+/* Menghormati pengaturan gerakan perangkat */
+@media (prefers-reduced-motion: reduce) {
+  .hero,
+  .hero-image img {
+    animation: none;
+    transition: none;
+  }
+}
+/* Kartu detail acara wisuda */
+.event-card {
+  background: linear-gradient(135deg, #fffaf7, #fff0f4);
+  border: 1px solid #f4d8df;
+  border-radius: 22px;
+  padding: 24px;
+  box-shadow: 0 8px 25px rgba(190, 130, 140, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(190, 130, 140, 0.18);
+}
+
+.event-card h3 {
+  color: #b66f87;
+}
+
+.event-card p {
+  line-height: 1.8;
+}
+/* Tombol undangan yang manis */
+button,
+.btn {
+  background: linear-gradient(135deg, #d98da5, #c77792);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 24px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(199, 119, 146, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover,
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(199, 119, 146, 0.3);
+}
+
+button:focus-visible,
+.btn:focus-visible {
+  outline: 3px solid #e9b6c7;
+  outline-offset: 3px;
+}
+.tombol-musik {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background: #b77b7e;
+  color: white;
+  font-size: 27px;
+  cursor: pointer;
+  z-index: 9999;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.tombol-musik:hover {
+  transform: scale(1.08);
+}
+
+.tombol-musik.aktif {
+  animation: putarMusik 3s linear infinite;
+}
+
+@keyframes putarMusik {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+/* Hitung mundur wisuda */
+.hitung-mundur {
+  padding: 65px 20px;
+  text-align: center;
+  background: linear-gradient(
+    180deg,
+    #FFF9F5 0%,
+    #FAF5ED 100%
+  );
+  color: #49373A;
+  border-top: 1px solid #E8D5B6;
+  border-bottom: 1px solid #E8D5B6;
+}
+
+.countdown-subtitle {
+  color: #B8757B;
+  font-size: 12px;
+  letter-spacing: 3px;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.hitung-mundur h2 {
+  font-family: Georgia, serif;
+  font-size: 29px;
+  font-weight: normal;
+  color: #722F37;
+  margin: 10px 0;
+}
+
+.countdown-tanggal {
+  color: #A66A72;
+  margin-bottom: 28px;
+  font-size: 14px;
+}
+
+.countdown-box {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.countdown-item {
+  flex: 1;
+  max-width: 85px;
+  padding: 18px 5px;
+  background: linear-gradient(145deg, #FFFFFF, #FFF8F4);
+  border: 1px solid #E8D5B6;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(114, 47, 55, 0.08);
+}
+
+.countdown-item span {
+  display: block;
+  color: #722F37;
+  font-family: Georgia, serif;
+  font-size: 28px;
+  margin-bottom: 6px;
+}
+
+.countdown-item small {
+  color: #A66A72;
+  font-size: 11px;
+}
+
+.countdown-penutup {
+  font-family: Georgia, serif;
+  font-style: italic;
+  color: #795B5B;
+  font-size: 13px;
+  margin-top: 28px;
+  line-height: 1.8;
+}
+
+@media (max-width: 380px) {
+  .countdown-box {
+    gap: 6px;
+  }
+
+  .countdown-item {
+    padding: 13px 3px;
+  }
+
+  .countdown-item span {
+    font-size: 23px;
+  }
+}
+/* GALERI FOTO WISUDA */
+.galeri {
+  background: linear-gradient(180deg, #fff9f5, #fcebe8);
+}
+
+.galeri-label {
+  color: #b8757b;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+
+.galeri h2 {
+  color: #76574b;
+}
+
+.galeri-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  max-width: 420px;
+  margin: 28px auto 0;
+  align-items: start;
+}
+
+.foto-galeri {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  margin: 0;
+  border: 1px solid #E8D5B6;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #FFFCF8;
+  cursor: pointer;
+  box-shadow: 0 5px 16px rgba(114, 47, 55, 0.09);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.foto-galeri:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 22px rgba(114, 47, 55, 0.16);
+}
+
+.foto-galeri img {
+  display: block;
+  width: 100%;
+  height: 125px;
+  object-fit: cover;
+  border-radius: 9px;
+  transition: transform 0.35s ease;
+}
+
+.foto-galeri:hover img {
+  transform: scale(1.04);
+}
+
+.foto-galeri:nth-child(3n + 2) img {
+  height: 150px;
+}
+
+.galeri-caption p {
+  color: #795B5B;
+  font-size: 14px;
+}
+
+.galeri-caption strong {
+  color: #722F37;
+}
+
+.galeri-caption::before {
+  content: "✦";
+  display: block;
+  color: #C9A66B;
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+/* FOTO DIPERBESAR */
+.galeri-modal[hidden] {
+  display: none;
+}
+
+.galeri-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(50, 35, 35, 0.88);
+}
+
+.galeri-modal img {
+  display: block;
+  max-width: 100%;
+  max-height: 85vh;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25);
+}
+
+.tutup-galeri {
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border-radius: 50%;
+  background: #fffdfb;
+  color: #79594e;
+  font-size: 30px;
+  line-height: 1;
+}
+
+@media (max-width: 380px) {
+  .galeri-grid {
+    gap: 9px;
+  }
+
+  .foto-galeri {
+    padding: 4px;
+    border-radius: 13px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .foto-galeri img {
+    transition: none;
+  }
+}
+/* KONFIRMASI KEHADIRAN */
+.rsvp {
+  max-width: 420px;
+  margin: 35px auto;
+  padding: 28px 20px;
+  text-align: center;
+  background: #fff8f8;
+  border: 1px solid #f1dfe4;
+  border-radius: 18px;
+  box-sizing: border-box;
+}
+
+.rsvp-label {
+  color: #b77b8b;
+  letter-spacing: 2px;
+  font-size: 13px;
+}
+
+.rsvp h2 {
+  color: #805766;
+  margin-bottom: 12px;
+}
+
+.rsvp-desc {
+  color: #75636a;
+  line-height: 1.7;
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.rsvp form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+}
+
+.rsvp label {
+  font-size: 14px;
+  color: #805766;
+  margin-top: 8px;
+}
+
+.rsvp input,
+.rsvp select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #e7cbd4;
+  border-radius: 10px;
+  background: white;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.rsvp-button {
+  width: 100%;
+  margin-top: 14px;
+  padding: 14px;
+  border: none;
+  border-radius: 30px;
+  background: #987080;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+/* ===== PEMBUKA AMPLOP WISUDA ===== */
+#layar-amplop {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 24px 18px;
+  box-sizing: border-box;
+  background:
+    radial-gradient(ellipse at top, #fffdfb 0%, transparent 60%),
+    linear-gradient(145deg, #fff8f4, #f8e8e8);
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.8s ease, visibility 0.8s ease;
+}
+
+#layar-amplop.selesai-buka {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.kartu-amplop {
+  width: 100%;
+  max-width: 390px;
+  text-align: center;
+  color: #795b5b;
+  animation: munculKartu 1s ease both;
+}
+
+.teks-kecil-amplop {
+  color: #b8757b;
+  font-size: 11px;
+  letter-spacing: 3px;
+  margin: 0 0 12px;
+}
+
+.judul-amplop {
+  margin: 0;
+  font-family: Georgia, serif;
+  font-size: clamp(32px, 9vw, 43px);
+  font-weight: normal;
+  color: #a66f75;
+}
+
+.subjudul-amplop {
+  margin: 12px 0 30px;
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.amplop {
+  position: relative;
+  width: min(270px, 78vw);
+  height: 170px;
+  margin: 0 auto 28px;
+  perspective: 900px;
+}
+
+.amplop-belakang {
+  position: absolute;
+  inset: 0;
+  background: #e8c9c6;
+  border-radius: 5px;
+  box-shadow: 0 12px 25px rgba(120, 80, 80, 0.15);
+}
+
+.surat-amplop {
+  position: absolute;
+  z-index: 2;
+  left: 8%;
+  bottom: 8px;
+  width: 84%;
+  height: 140px;
+  box-sizing: border-box;
+  padding: 17px 5px;
+  background: #fffdf9;
+  border: 1px solid #f0dfd8;
+  color: #b8757b;
+  transition: transform 1s ease;
+}
+
+.surat-amplop span {
+  font-size: 22px;
+}
+
+.surat-amplop p {
+  font-family: Georgia, serif;
+  font-size: 20px;
+  margin: 7px 0;
+}
+
+.surat-amplop small {
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+.amplop-depan {
+  position: absolute;
+  z-index: 3;
+  inset: 0;
+  background: #d9aeb0;
+  clip-path: polygon(0 0, 50% 57%, 100% 0, 100% 100%, 0 100%);
+  border-radius: 4px;
+}
+
+.tutup-amplop {
+  position: absolute;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #e9c8c5;
+  clip-path: polygon(0 0, 100% 0, 50% 60%);
+  transform-origin: top center;
+  transition: transform 0.7s ease;
+}
+
+.segel-amplop {
+  position: absolute;
+  z-index: 5;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 37px;
+  height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #b8757b;
+  border: 2px solid #f4dfd8;
+  color: #fffaf7;
+  font-family: Georgia, serif;
+  font-size: 19px;
+  box-shadow: 0 3px 8px rgba(100, 60, 60, 0.15);
+  transition: opacity 0.3s ease;
+}
+
+.amplop.dibuka .tutup-amplop {
+  transform: rotateX(180deg);
+  z-index: 1;
+}
+
+.amplop.dibuka .segel-amplop {
+  opacity: 0;
+}
+
+.amplop.dibuka .surat-amplop {
+  transform: translateY(-85px);
+}
+
+.pesan-amplop {
+  max-width: 290px;
+  margin: 0 auto 23px;
+  font-family: Georgia, serif;
+  font-size: 14px;
+  line-height: 1.8;
+  color: #896b6b;
+}
+
+#tombolBukaAmplop {
+  border: none;
+  border-radius: 30px;
+  padding: 14px 27px;
+  background: #b8757b;
+  color: white;
+  font-family: inherit;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  box-shadow: 0 5px 15px rgba(184, 117, 123, 0.25);
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+#tombolBukaAmplop:hover {
+  background: #a6666d;
+  transform: translateY(-2px);
+}
+
+#tombolBukaAmplop:focus-visible {
+  outline: 2px solid #795b5b;
+  outline-offset: 4px;
+}
+
+.catatan-amplop {
+  margin-top: 14px;
+  font-size: 11px;
+  color: #a78b88;
+}
+
+.hiasan-amplop {
+  position: absolute;
+  color: #d7a4a5;
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+.hiasan-atas {
+  top: 7%;
+  right: 9%;
+  font-size: 55px;
+  transform: rotate(18deg);
+}
+
+.hiasan-bawah {
+  bottom: 7%;
+  left: 8%;
+  font-size: 65px;
+  transform: rotate(-15deg);
+}
+
+@keyframes munculKartu {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-height: 650px) {
+  .kartu-amplop {
+    transform: scale(0.82);
+  }
+
+  .subjudul-amplop {
+    margin-bottom: 18px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #layar-amplop,
+  .surat-amplop,
+  .tutup-amplop,
+  .segel-amplop {
+    transition-duration: 0.01ms;
+  }
+
+  .kartu-amplop {
+    animation: none;
+  }
+}
+/* ===== EFEK KELOPAK BUNGA BERJATUHAN ===== */
+#kelopak-bunga {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  overflow: hidden;
+  pointer-events: none;
+  contain: layout paint;
+}
+
+.kelopak-jatuh {
+  position: absolute;
+  top: -45px;
+  left: 0;
+  display: block;
+  color: #d9a0aa;
+  opacity: 0;
+  user-select: none;
+  will-change: transform, opacity;
+  animation: bungaJatuh linear forwards;
+}
+
+@keyframes bungaJatuh {
+  0% {
+    transform: translate3d(0, -30px, 0) rotate(0deg);
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0.7;
+  }
+
+  50% {
+    opacity: 0.65;
+  }
+
+  90% {
+    opacity: 0.4;
+  }
+
+  100% {
+    transform: translate3d(var(--geser-bunga), 105vh, 0)
+      rotate(var(--putar-bunga));
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #kelopak-bunga {
+    display: none;
+  }
+}
+/* ===== RESPONSIVE HP, TABLET, DAN LAPTOP ===== */
+
+/* Mencegah elemen melebar keluar layar */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  overflow-x: clip;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  overflow-x: clip;
+}
+
+img,
+video,
+iframe {
+  max-width: 100%;
+}
+
+/* Tampilan HP */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: clamp(27px, 8vw, 38px);
+    overflow-wrap: break-word;
+  }
+
+  h2 {
+    font-size: clamp(22px, 6vw, 29px);
+  }
+
+  p {
+    line-height: 1.7;
+  }
+
+  section {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  /* Foto utama */
+  .hero img,
+  .foto-utama {
+    max-width: 85%;
+    height: auto;
+  }
+
+  /* Galeri polaroid */
+  .galeri .foto-galeri {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px 10px;
+    padding: 5px;
+  }
+
+  /* Countdown */
+  .countdown-box {
+    gap: 6px;
+  }
+
+  .countdown-item {
+    min-width: 0;
+    padding: 12px 3px;
+  }
+
+  .countdown-item span {
+    font-size: clamp(19px, 6vw, 25px);
+  }
+
+  /* Peta */
+  iframe {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Tombol */
+  button,
+  .button,
+  a.button {
+    max-width: 100%;
+  }
+}
+
+/* Tampilan tablet */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .galeri .foto-galeri {
+    max-width: 650px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* Tampilan laptop dan desktop */
+@media (min-width: 1025px) {
+  body {
+    font-size: 16px;
+  }
+
+  .galeri .foto-galeri {
+    max-width: 850px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+  }
+}
+  </style>
+</head>
+
+<body>
+  <!-- EFEK KELOPAK BUNGA -->
+<div id="kelopak-bunga" aria-hidden="true"></div>
+  <!-- PEMBUKA AMPLOP UNDANGAN -->
+<div id="layar-amplop">
+  <div class="hiasan-amplop hiasan-atas">✿</div>
+  <div class="hiasan-amplop hiasan-bawah">❀</div>
+
+  <div class="kartu-amplop">
+    <p class="teks-kecil-amplop">♡ THE GRADUATION OF ♡</p>
+
+    <h1 class="judul-amplop">Nurul Hikmah</h1>
+
+    <p class="subjudul-amplop">Dengan penuh rasa syukur</p>
+
+    <div class="amplop" id="amplopWisuda">
+      <div class="amplop-belakang"></div>
+
+      <div class="surat-amplop">
+        <span>🤍</span>
+        <p>You're Invited</p>
+        <small>17 Oktober 2026</small>
+      </div>
+
+      <div class="amplop-depan"></div>
+      <div class="tutup-amplop"></div>
+
+      <div class="segel-amplop">N</div>
+    </div>
+
+    <p class="pesan-amplop">
+      Sebuah hari istimewa, sebuah cerita penuh syukur.
+    </p>
+
+    <button id="tombolBukaAmplop" type="button">
+      <span>♡</span> Buka Undangan <span>♡</span>
+    </button>
+
+    <p class="catatan-amplop">Tap untuk membuka surat istimewa</p>
+  </div>
+</div>
+<!-- AKHIR PEMBUKA AMPLOP -->
+  <nav>
+    <div class="brand">🎓 Undangan Wisuda ♡</div>
+    <a href="#acara">Tentang Acara ↓</a>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-content">
+      <p class="eyebrow">♡ Hai Teman-Teman ♡</p>
+      <p>Aku mengundang kamu untuk hadir di acara</p>
+
+      <h1>Wisuda Ku</h1>
+      <div class="name">Nurul Hikmah</div>
+
+      <p class="date">♡ 17 Oktober 2026 ♡</p>
+
+      <p class="intro">
+        Alhamdulillah, sebuah perjalanan panjang
+        akhirnya sampai di titik istimewa.
+        Kehadiran kalian akan menjadi kebahagiaan
+        tersendiri untukku. Yuk, rayakan hari ini bersama!
+      </p>
+
+      <a class="button" href="#acara">Lihat Detail Acara ↓</a>
+    </div>
+    <div class="hero-image">
+  <img src="images/wisudawati.png" alt="Ilustrasi wisudawati berhijab">
+</div>
+  </header>
+
+  <section id="acara">
+    <h2>♡ Tentang Acara ♡</h2>
+    <p class="subtitle">
+      Dengan penuh rasa syukur, aku ingin berbagi
+      kebahagiaan atas pencapaian ini bersama kalian.
+    </p>
+<section class="hitung-mundur">
+  <p class="countdown-subtitle">♡ Momen Istimewa ♡</p>
+  <h2>Menuju Hari Wisuda</h2>
+  <p class="countdown-tanggal">17 Oktober 2026</p>
+
+  <div class="countdown-box">
+    <div class="countdown-item">
+      <span id="hari">00</span>
+      <small>Hari</small>
+    </div>
+    <div class="countdown-item">
+      <span id="jam">00</span>
+      <small>Jam</small>
+    </div>
+    <div class="countdown-item">
+      <span id="menit">00</span>
+      <small>Menit</small>
+    </div>
+    <div class="countdown-item">
+      <span id="detik">00</span>
+      <small>Detik</small>
+    </div>
+  </div>
+
+  <p class="countdown-penutup">
+    Dengan penuh rasa syukur, menanti hari bahagia 🤍
+  </p>
+</section>
+
+    <div class="details">
+      <div class="card">
+        <div class="emoji">🗓️</div>
+        <h3>Hari / Tanggal</h3>
+        <p>Sabtu</p>
+        <p>17 Oktober 2026</p>
+      </div>
+
+      <div class="card">
+        <div class="emoji">🕒</div>
+        <h3>Waktu</h3>
+        <p>08.00 WIB s/d selesai</p>
+        <p><small>Waktu dapat disesuaikan</small></p>
+      </div>
+
+      <div class="card">
+        <div class="emoji">📍</div>
+        <h3>Tempat</h3>
+        <p>Aula Universitas Banten Jaya</p>
+        <p><small>Universitas Banten Jaya Jl. Syekh Moh. Nawawi Albantani No. 2 Kp. Baru, Kecamatan Curug, Kota Serang, Banten</small></p>
+      </div>
+    </div>
+  </section>
+<!-- GALERI FOTO WISUDA -->
+<section class="galeri" id="galeri">
+  <p class="galeri-label">♡ Kenangan Istimewa ♡</p>
+
+  <h2>Galeri Perjalanan</h2>
+
+  <p class="subtitle">
+    Sepuluh kenangan indah dalam perjalanan
+    yang penuh doa dan rasa syukur 🤍
+  </p>
+
+  <div class="galeri-grid">
+    <button class="foto-galeri" type="button" data-foto="images/foto-wisuda-1.jpg">
+      <img src="images/foto-wisuda-1.jpg" alt="Foto wisuda 1" loading="lazy">
+    </button>
+
+    <button class="foto-galeri" type="button" data-foto="images/foto-wisuda-2.jpg">
+      <img src="images/foto-wisuda-2.jpg" alt="Foto wisuda 2" loading="lazy">
+    </button>
+
+    <button class="foto-galeri" type="button" data-foto="images/foto-wisuda-3.jpg">
+      <img src="images/foto-wisuda-3.jpg" alt="Foto wisuda 3" loading="lazy">
+    </button>
+
+    <button class="foto-galeri" type="button" data-foto="images/foto-wisuda-4.jpg">
+      <img src="images/foto-wisuda-4.jpg" alt="Foto wisuda 4" loading="lazy">
+    </button>
+
+    <button class="foto-galeri" type="button" data-foto="images/foto-wisuda-5.jpg">
+      <img src="images/foto-wisuda-5.jpg" alt="Foto wisuda 5" loading="lazy">
+    </button>
+
+    <button class="foto-galeri" type="button" data-foto="images/foto-wisuda-6.jpg">
+      <img src="images/foto-wisuda-6.jpg" alt="Foto wisuda 6" loading="lazy">
+    </button>
+
+    <button class="foto-galeri" type="button" data-foto="images/foto-wisuda-7.jpg">
+      <img src="images/foto-wisuda-7.jpg" alt="Foto wisuda 7" loading="lazy">
+    </button>
+
+    <button class="foto-galeri" type="button" data-foto="images/foto-wisuda-8.jpg">
+      <img src="images/foto-wisuda-8.jpg" alt="Foto wisuda 8" loading="lazy">
+    </button>
+
+    <button class="foto-galeri" type="button" data-foto="images/foto-wisuda-9.jpg">
+      <img src="images/foto-wisuda-9.jpg" alt="Foto wisuda 9" loading="lazy">
+    </button>
+
+    <button class="foto-galeri" type="button" data-foto="images/foto-wisuda-10.jpg">
+      <img src="images/foto-wisuda-10.jpg" alt="Foto wisuda 10" loading="lazy">
+    </button>
+
+     <button class="foto-galeri" type="button" data-foto="images/foto-wisuda-11.jpg">
+      <img src="images/foto-wisuda-11.jpg" alt="Foto wisuda 11" loading="lazy">
+    </button>
+
+     <button class="foto-galeri" type="button" data-foto="images/foto-wisuda-12.jpg">
+      <img src="images/foto-wisuda-12.jpg" alt="Foto wisuda 12" loading="lazy">
+    </button>
+  </div>
+
+  <p class="galeri-caption">
+    Setiap langkah adalah cerita, setiap doa adalah kekuatan ♡
+  </p>
+</section>
+
+  <!-- Tampilan foto saat diperbesar -->
+  <div class="galeri-modal" id="galeriModal"
+       role="dialog" aria-modal="true"
+       aria-label="Foto wisuda yang diperbesar"
+       aria-hidden="true" hidden>
+    <button class="tutup-galeri" id="tutupGaleri"
+            type="button" aria-label="Tutup foto">
+      &times;
+    </button>
+
+    <img id="fotoBesar" src="" alt="Foto wisuda Nurul Hikmah">
+  </div>
+
+  <section class="location" id="lokasi">
+    <h2>♡ Lokasi Acara ♡</h2>
+    <p class="subtitle">
+      Aku tunggu kehadiranmu di hari spesial ini!
+      Detail lokasi akan segera diperbarui.
+    </p>
+
+    <a class="button"
+       href="https://maps.app.goo.gl/xCwBKLU3CfV1nFwq8"
+       target="_blank"
+       rel="noopener noreferrer">
+      Lihat di Google Maps ↗
+    </a>
+  </section>
+
+<!-- KONFIRMASI KEHADIRAN -->
+<section class="rsvp" id="rsvp">
+  <p class="rsvp-label">♡ Kehadiranmu ♡</p>
+  <h2>Konfirmasi Kehadiran</h2>
+  <p class="rsvp-desc">
+    Mohon konfirmasikan kehadiranmu
+    untuk acara wisuda Nurul Hikmah 🤍
+  </p>
+
+  <form id="formRSVP">
+    <label for="namaTamu">Nama Lengkap</label>
+    <input
+      type="text"
+      id="namaTamu"
+      placeholder="Masukkan nama kamu"
+      required
+    >
+
+    <label for="statusHadir">Konfirmasi Kehadiran</label>
+    <select id="statusHadir" required>
+      <option value="">Pilih konfirmasi</option>
+      <option value="Hadir">InsyaAllah hadir</option>
+      <option value="Tidak dapat hadir">Mohon maaf, tidak dapat hadir</option>
+    </select>
+
+    <button type="submit" class="rsvp-button">
+      Kirim Konfirmasi WhatsApp
+    </button>
+  </form>
+</section>
+
+  <footer>
+    ♡ Nurul Hikmah | Wisuda 17 Oktober 2026 ♡
+    <p>Terima kasih sudah menjadi bagian dari perjalanan ini.</p>
+  </footer>
+  <audio id="musikUndangan" loop>
+  <source src="audio/musik-wisuda.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  const tombolMusik = document.querySelector('.button');
+  const musikUndangan = document.getElementById('musikUndangan');
+
+  if (tombolMusik && musikUndangan) {
+    tombolMusik.addEventListener('click', function () {
+      musikUndangan.play().catch(function (error) {
+        console.log('Musik belum dapat diputar:', error);
+      });
+    });
+  }
+  const tanggalWisuda = new Date('2026-10-17T00:00:00+07:00').getTime();
+
+function perbaruiCountdown() {
+  const sekarang = Date.now();
+  const selisih = tanggalWisuda - sekarang;
+
+  if (selisih <= 0) {
+    document.getElementById('hari').textContent = '00';
+    document.getElementById('jam').textContent = '00';
+    document.getElementById('menit').textContent = '00';
+    document.getElementById('detik').textContent = '00';
+
+    return;
+  }
+
+  const hari = Math.floor(selisih / (1000 * 60 * 60 * 24));
+  const jam = Math.floor((selisih / (1000 * 60 * 60)) % 24);
+  const menit = Math.floor((selisih / (1000 * 60)) % 60);
+  const detik = Math.floor((selisih / 1000) % 60);
+
+  document.getElementById('hari').textContent = String(hari).padStart(2, '0');
+  document.getElementById('jam').textContent = String(jam).padStart(2, '0');
+  document.getElementById('menit').textContent = String(menit).padStart(2, '0');
+  document.getElementById('detik').textContent = String(detik).padStart(2, '0');
+}
+
+perbaruiCountdown();
+setInterval(perbaruiCountdown, 1000);
+const formRSVP = document.getElementById("formRSVP");
+
+if (formRSVP) {
+  formRSVP.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const nama = document.getElementById("namaTamu").value.trim();
+    const status = document.getElementById("statusHadir").value;
+
+    if (!nama || !status) {
+      alert("Mohon lengkapi semua data terlebih dahulu.");
+      return;
+    }
+
+    const nomorWhatsApp = "6282311499780";
+
+    const isiPesan =
+      "Assalamualaikum, saya ingin mengonfirmasi kehadiran pada acara wisuda Nurul Hikmah.\n\n" +
+      "Nama: " + nama + "\n" +
+      "Konfirmasi: " + status + "\n" +
+      "Terima kasih.";
+
+    const url =
+      "https://wa.me/" +
+      nomorWhatsApp +
+      "?text=" +
+      encodeURIComponent(isiPesan);
+
+    window.open(url, "_blank");
+  });
+}
+/* ===== ANIMASI BUKA AMPLOP WISUDA ===== */
+const tombolBukaAmplop = document.getElementById("tombolBukaAmplop");
+const amplopWisuda = document.getElementById("amplopWisuda");
+const layarAmplop = document.getElementById("layar-amplop");
+
+if (tombolBukaAmplop && amplopWisuda && layarAmplop) {
+  tombolBukaAmplop.addEventListener("click", function () {
+    tombolBukaAmplop.disabled = true;
+    tombolBukaAmplop.innerHTML = "♡ Membuka Undangan... ♡";
+
+    amplopWisuda.classList.add("dibuka");
+
+    setTimeout(function () {
+      layarAmplop.classList.add("selesai-buka");
+
+      setTimeout(function () {
+        layarAmplop.style.display = "none";
+      }, 850);
+    }, 900);
+  });
+}
+/* ===== ANIMASI KELOPAK BUNGA ===== */
+(function () {
+  const wadahBunga = document.getElementById("kelopak-bunga");
+
+  if (!wadahBunga) return;
+
+  // Hormati pengaturan pengurangan animasi perangkat
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    return;
+  }
+
+  const simbolBunga = ["🌸", "✿", "❀", "🌷"];
+  const jumlahMaksimal = 16;
+
+  function buatKelopak() {
+    if (wadahBunga.childElementCount >= jumlahMaksimal) return;
+
+    const kelopak = document.createElement("span");
+    kelopak.className = "kelopak-jatuh";
+    kelopak.setAttribute("aria-hidden", "true");
+
+    kelopak.textContent =
+      simbolBunga[Math.floor(Math.random() * simbolBunga.length)];
+
+    const ukuran = 12 + Math.random() * 12;
+    const durasi = 7 + Math.random() * 6;
+    const posisi = Math.random() * 100;
+    const geser = -80 + Math.random() * 160;
+    const putaran = 180 + Math.random() * 540;
+
+    kelopak.style.left = posisi + "vw";
+    kelopak.style.fontSize = ukuran + "px";
+    kelopak.style.animationDuration = durasi + "s";
+    kelopak.style.setProperty("--geser-bunga", geser + "px");
+    kelopak.style.setProperty("--putar-bunga", putaran + "deg");
+
+    wadahBunga.appendChild(kelopak);
+
+    kelopak.addEventListener("animationend", function () {
+      kelopak.remove();
+    }, { once: true });
+  }
+
+  // Mulai dengan beberapa kelopak
+  for (let i = 0; i < 7; i++) {
+    setTimeout(buatKelopak, i * 450);
+  }
+
+  // Tambahkan kelopak secara berkala
+  setInterval(buatKelopak, 900);
+})();
+</script>
+<button id="tombolMusik" class="tombol-musik"
+        type="button" aria-label="Matikan musik">
+  ♫
+</button>
+</body>
+</html>
